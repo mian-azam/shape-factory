@@ -1,0 +1,72 @@
+@import url(./reset.css);
+
+body {
+    background-color: #f2f3f4;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+    place-items: center;
+}
+
+input {
+    width: 160px;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid rgba(34, 13, 13, 0.1);
+    background-color: rgba(227, 228, 169, 0.3);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--app-dark-bg);
+    text-align: center;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #c7b215;
+    border: 1px solid #c78915;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: var(--app-dark-bg);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e79b2;
+    border: 1px solid var(--app-red);
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+.parent {
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-gap: 10px;
+    place-self: center;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: #f2f3f4;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+}
