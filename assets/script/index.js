@@ -31,7 +31,6 @@ function createShape() {
     console.log(array);
     onEvent('click', shape, function () {
         para.innerText = `${colors.value} ${shapes.value}`;
-
     });
 }
 
