@@ -19,12 +19,20 @@ const myColors = {
 }
 
 const array = [];
+const newArr = new Shapes(array);
 
 function createShape() {
     const shape = document.createElement('div');
     shape.classList.add(shapes.value);
     parent.appendChild(shape);
     shape.style.backgroundColor = myColors[colors.value];
+
+    array.push(shape);
+    console.log(array);
+    onEvent('click', shape, function () {
+        para.innerText = `${colors.value} ${shapes.value}`;
+
+    });
 }
 
 
@@ -38,6 +46,8 @@ onEvent('click', btn, function () {
     createShape();
 
     count += 1;
+
+
 });
 
 
