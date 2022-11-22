@@ -13,12 +13,12 @@ body {
     place-items: center;
 }
 
-input {
+select {
     width: 160px;
     height: 48px;
     padding: 0 15px;
     border: 1px solid rgba(34, 13, 13, 0.1);
-    background-color: rgba(227, 228, 169, 0.3);
+    background-color: rgba(198, 228, 169, 0.3);
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 20px;
@@ -27,13 +27,18 @@ input {
     text-align: center;
 }
 
+select+select {
+    margin-left: 10px;
+}
+
 button {
     width: 120px;
     height: 50px;
     margin: 10px 0;
+    margin-left: 10px;
     text-align: center;
-    background-color: #c7b215;
-    border: 1px solid #c78915;
+    background-color: #15c76b;
+    border: 1px solid #8cc715;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 25px;
@@ -45,8 +50,7 @@ button {
 }
 
 button:hover {
-    background-color: #0e79b2;
-    border: 1px solid var(--app-red);
+    background-color: #0eb291;
     transition: all 0.1s ease-in-out;
 }
 
