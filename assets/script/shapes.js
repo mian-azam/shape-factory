@@ -7,21 +7,15 @@ class Shapes {
     }
 
     setColor() {
-
+        return this._name;
     }
-
-
+    setName() {
+        return this._color;
+    }
     getInfo() {
 
     }
 }
 
-const colors = {
-    Blue: '#0f9',
-    Green: '#9f0',
-    Orange: '#f90',
-    Pink: '#f09',
-    Purple: '#90f'
-}
 
 export { Shapes };
