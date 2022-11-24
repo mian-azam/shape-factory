@@ -19,7 +19,6 @@ const myColors = {
 }
 
 const array = [];
-const newArr = new Shapes(array);
 
 function createShape() {
     const shape = document.createElement('div');
@@ -28,9 +27,9 @@ function createShape() {
     shape.style.backgroundColor = myColors[colors.value];
 
     array.push(shape);
-    console.log(array);
+
     onEvent('click', shape, function () {
-        para.innerText = `${colors.value} ${shapes.value}`;
+        para.innerText = `Unit ${array.indexOf(shape) + 1} : ${colors.value}  ${shapes.value}`;
     });
 }
 

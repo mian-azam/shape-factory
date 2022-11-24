@@ -13,7 +13,7 @@ class Shapes {
         return this._color;
     }
     getInfo() {
-
+        return `${this._color} ${this._name}`
     }
 }
 
